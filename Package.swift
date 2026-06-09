@@ -9,7 +9,7 @@ let package = Package(
     .iOS(.v15),
     .tvOS(.v15),
     .macCatalyst(.v15),
-    .watchOS(.v8),
+    .watchOS(.v10),
   ],
   products: [
     .library(
@@ -20,7 +20,7 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/gonzalezreal/NetworkImage", from: "6.0.0"),
     .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.10.0"),
-    .package(url: "https://github.com/iblacksun/swift-cmark", from: "0.4.0"),
+    .package(url: "https://github.com/iblacksun/swift-cmark", branch: "main"),
   ],
   targets: [
     .target(
